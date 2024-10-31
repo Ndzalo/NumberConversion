@@ -58,12 +58,12 @@
                 number %= 10;
 
                 // Add hyphen if there's a unit place
-                if (number > 0)
+                if (number > 0 && number < 10)
                     words += "-" + DigitToWord(number);
             }
-            else if (number > 0)
+            else if (number > 0 && number < 20)
             {
-                // Handle numbers from 1 to 19
+                
                 words += DigitToWord(number);
             }
 
